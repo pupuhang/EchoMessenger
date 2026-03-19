@@ -9,8 +9,12 @@
 
 ## 실행화면(과제1)
 - 과제1 코드의 실행 스크린샷
+- <img width="1713" height="920" alt="3주차 과제1" src="https://github.com/user-attachments/assets/09482f8f-ec64-4576-95d9-d48a4674484e" />
+
 - 과제 내용
 - Label(표시), TextBox(입력), Button(전송), ListBox(대화창)를 적절히 배치
 - 전송 버튼 클릭시 TextBox의 텍스트를 ListBox의 항목(Items)으로 추가
 - 추가 직후 TextBox의 내용을 비워(Clear) 다음 입력을 준비
 - 구현 내용과 기능 설명
+- TextBox에 내용을 적고 전송 버튼을 누르면 ListBox에 내용이 출력
+- 전송 후에 TextBox의 내용 초기화

@@ -49,10 +49,7 @@ namespace EchoMessenger
             }
         }
 
-        private void listMessage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void listMessage_Click(object sender, EventArgs e)
         {

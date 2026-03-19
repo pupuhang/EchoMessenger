@@ -44,7 +44,6 @@
             listMessage.Size = new Size(776, 300);
             listMessage.TabIndex = 0;
             listMessage.Click += listMessage_Click;
-            listMessage.SelectedIndexChanged += listMessage_SelectedIndexChanged;
             // 
             // lblName
             // 

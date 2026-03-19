@@ -9,15 +9,7 @@ namespace EchoMessenger
             InitializeComponent();
         }
 
-        private void txtMessage_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void listMessage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        // txtMessage_TextChanged 와 listMessage_SelectedIndexChanged 안쓰는 함수 삭제
 
         private void btnSend_Click(object sender, EventArgs e)
         {
@@ -26,7 +18,7 @@ namespace EchoMessenger
                 return;
 
 
-            //함수 message에 현재 시간과 Text를 합쳐서 저장 후listMessage에 추가
+            //변수 message에 현재 시간과 Text를 합쳐서 저장 후listMessage에 추가
             //Trim()로 텍스트 앞 공백 제거
             string message = $"[{DateTime.Now:HH:mm:ss}] {txtMessage.Text.Trim()}";
             listMessage.Items.Add(message);

@@ -43,7 +43,6 @@
             listMessage.Name = "listMessage";
             listMessage.Size = new Size(776, 300);
             listMessage.TabIndex = 0;
-            listMessage.SelectedIndexChanged += listMessage_SelectedIndexChanged;
             // 
             // lblName
             // 
@@ -63,7 +62,6 @@
             txtMessage.Name = "txtMessage";
             txtMessage.Size = new Size(607, 27);
             txtMessage.TabIndex = 2;
-            txtMessage.TextChanged += txtMessage_TextChanged;
             txtMessage.KeyDown += txtMessage_KeyDown;
             // 
             // btnSend

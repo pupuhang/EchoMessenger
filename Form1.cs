@@ -29,7 +29,7 @@ namespace EchoMessenger
             listMessage.Items.Add(message);
 
             //ListBox에 전송한 메세지 수 표시
-            lblCount.Text = "현재 대화: " + listMessage.Items.Count+ "개";
+            lblCount.Text = "현재 대화: " + listMessage.Items.Count + "개";
 
             //전송 후 TextBox 초기화
             txtMessage.Clear();
@@ -43,9 +43,31 @@ namespace EchoMessenger
         private void txtMessage_KeyDown(object sender, KeyEventArgs e)
         {
             //Enter키를 누르면 전송(btnSend_Click 발생)
-            if (e.KeyCode == Keys.Enter){ 
-                btnSend_Click(sender, e); 
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSend_Click(sender, e);
             }
+        }
+
+        private void listMessage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listMessage_Click(object sender, EventArgs e)
+        {
+            //선택 안했을 경우 예외처리
+            if (listMessage.SelectedIndex == -1)
+            {
+                MessageBox.Show("삭제할 메시지를 선택하세요.");
+                return;
+            }
+
+            // 선택된 항목 삭제
+            listMessage.Items.RemoveAt(listMessage.SelectedIndex);
+
+            // 개수 업데이트
+            lblCount.Text = "메시지 수: " + listMessage.Items.Count;
         }
     }
 }

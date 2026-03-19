@@ -1,6 +1,6 @@
 ﻿namespace EchoMessenger
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -75,7 +75,7 @@
             btnSend.UseVisualStyleBackColor = false;
             btnSend.Click += btnSend_Click;
             // 
-            // Form1
+            // Form
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -84,8 +84,8 @@
             Controls.Add(txtMessage);
             Controls.Add(lblName);
             Controls.Add(listMessage);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Form";
+            Text = "Messenger";
             ResumeLayout(false);
             PerformLayout();
         }

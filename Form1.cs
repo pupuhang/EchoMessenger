@@ -16,7 +16,12 @@ namespace EchoMessenger
             //메세지가 공백이면 ListBox에 추가 안함
             if (string.IsNullOrWhiteSpace(txtMessage.Text))
                 return;
-
+            //메세지를 50자까지 받음
+            if (txtMessage.Text.Length > 50)
+            {
+                MessageBox.Show("메시지는 50자까지 입력 가능합니다.");
+                return;
+            }
 
             //변수 message에 현재 시간과 Text를 합쳐서 저장 후listMessage에 추가
             //Trim()로 텍스트 앞 공백 제거

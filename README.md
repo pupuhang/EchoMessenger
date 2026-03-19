@@ -23,7 +23,8 @@
 - 구현 내용과 기능 설명
 - TextBox에 내용을 적고 전송 버튼을 누르면 ListBox에 내용이 출력
 - 전송 후에 TextBox의 내용 초기화
-
+-if (listMessage.SelectedIndex == -1)를 통해 예외값 지정
+-.Items.RemoveAt로 리스트 삭제
 ## 실행화면(과제2)
 -과제2 코드의 실행 스크린샷
 <img width="1708" height="920" alt="3주차 과제 2" src="https://github.com/user-attachments/assets/74b7ceb4-01b9-4ea0-ab5a-e43c03b06e46" />

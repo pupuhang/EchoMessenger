@@ -1,6 +1,6 @@
 ﻿namespace EchoMessenger
 {
-    partial class Form
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,14 +32,16 @@
             lblName = new Label();
             txtMessage = new TextBox();
             btnSend = new Button();
+            lblCount = new Label();
             SuspendLayout();
             // 
             // listMessage
             // 
+            listMessage.Font = new Font("맑은 고딕", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 129);
             listMessage.FormattingEnabled = true;
             listMessage.Location = new Point(12, 74);
             listMessage.Name = "listMessage";
-            listMessage.Size = new Size(776, 304);
+            listMessage.Size = new Size(776, 300);
             listMessage.TabIndex = 0;
             listMessage.SelectedIndexChanged += listMessage_SelectedIndexChanged;
             // 
@@ -57,7 +59,7 @@
             // 
             // txtMessage
             // 
-            txtMessage.Location = new Point(12, 398);
+            txtMessage.Location = new Point(12, 411);
             txtMessage.Name = "txtMessage";
             txtMessage.Size = new Size(607, 27);
             txtMessage.TabIndex = 2;
@@ -75,16 +77,26 @@
             btnSend.UseVisualStyleBackColor = false;
             btnSend.Click += btnSend_Click;
             // 
-            // Form
+            // lblCount
+            // 
+            lblCount.AutoSize = true;
+            lblCount.ForeColor = SystemColors.Highlight;
+            lblCount.Location = new Point(12, 381);
+            lblCount.Name = "lblCount";
+            lblCount.Size = new Size(0, 20);
+            lblCount.TabIndex = 4;
+            // 
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblCount);
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
             Controls.Add(lblName);
             Controls.Add(listMessage);
-            Name = "Form";
+            Name = "Form1";
             Text = "Messenger";
             ResumeLayout(false);
             PerformLayout();
@@ -96,5 +108,6 @@
         private Label lblName;
         private TextBox txtMessage;
         private Button btnSend;
+        private Label lblCount;
     }
 }

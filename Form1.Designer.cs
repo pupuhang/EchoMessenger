@@ -33,6 +33,7 @@
             txtMessage = new TextBox();
             btnSend = new Button();
             lblCount = new Label();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // listMessage
@@ -85,11 +86,25 @@
             lblCount.Size = new Size(0, 20);
             lblCount.TabIndex = 4;
             // 
+            // btnClear
+            // 
+            btnClear.AutoSize = true;
+            btnClear.Font = new Font("맑은 고딕", 9F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnClear.ForeColor = SystemColors.Highlight;
+            btnClear.Location = new Point(669, 35);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(119, 30);
+            btnClear.TabIndex = 5;
+            btnClear.Text = "대화 내용 삭제";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnClear);
             Controls.Add(lblCount);
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
@@ -108,5 +123,6 @@
         private TextBox txtMessage;
         private Button btnSend;
         private Label lblCount;
+        private Button btnClear;
     }
 }

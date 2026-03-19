@@ -49,7 +49,7 @@ namespace EchoMessenger
             }
         }
 
-      
+
 
         private void listMessage_Click(object sender, EventArgs e)
         {
@@ -60,11 +60,19 @@ namespace EchoMessenger
                 return;
             }
 
-            // 선택된 항목 삭제
+            // 마우스로 선택된 항목 삭제
             listMessage.Items.RemoveAt(listMessage.SelectedIndex);
 
             // 개수 업데이트
-            lblCount.Text = "메시지 수: " + listMessage.Items.Count;
+            lblCount.Text = "현재 대화: " + listMessage.Items.Count + "개";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            //리스트 전체 삭제
+            listMessage.Items.Clear();
+            // 개수 업데이트
+            lblCount.Text = "현재 대화: " + listMessage.Items.Count + "개";
         }
     }
 }

@@ -12,7 +12,9 @@
 - Trim()로 텍스트 앞 공백 제거
 - {DateTime.Now:HH:mm:ss} 현재 시간을 받아와 시간,분,초를 두 자리 출력
 - Count 속성을 통해 값을 가져와 텍스트 개수 확인
- 
+- if (listMessage.SelectedIndex == -1)를 통해 예외값 지정
+- .Items.RemoveAt로 리스트 삭제
+  
 ## 실행화면(과제1)
 - 과제1 코드의 실행 스크린샷
 <img width="1713" height="920" alt="3주차 과제1" src="https://github.com/user-attachments/assets/3cc0e451-556f-4969-b851-5e54beeac194" />
@@ -23,8 +25,8 @@
 - 구현 내용과 기능 설명
 - TextBox에 내용을 적고 전송 버튼을 누르면 ListBox에 내용이 출력
 - 전송 후에 TextBox의 내용 초기화
-- if (listMessage.SelectedIndex == -1)를 통해 예외값 지정
-- .Items.RemoveAt로 리스트 삭제
+- clear()를 통해 전송후 TextBox 속 내용 초기화
+- 만약 ListBox 화면보다 많은 메세지 개수가 있을시 위아래 스코롤 생성 
   
 ## 실행화면(과제2)
 - 과제2 코드의 실행 스크린샷
@@ -36,6 +38,7 @@
 - 마우스 클릭 대신 키보드의 Enter 키를 눌러도 메시지가 전송
 - 내용이 없는 빈문자열이나 공백(Space)만 있을 때는 메시지가 전송되지 않도록 방지
 - 구현 내용과 기능 설명
+- 전송 후 TextBox에 남겨진 메시지 제거
 - 전송 후에 커서가 입력창에 위치함
 - 키보드의 Enter키를 눌러도 전송함
 - 입력창에 공백을 입력하면 전송하지 않음
